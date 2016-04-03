@@ -140,6 +140,7 @@
   font-size: 12px;
   list-style: none;
   padding-left: 10px;
+
   @include small {
     -webkit-column-count: 2;
     -moz-column-count: 2;
