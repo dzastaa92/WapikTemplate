@@ -1,0 +1,82 @@
+#world {
+  background-color: #eef1ec;
+  height: auto;
+}
+
+.world-container {
+  position: relative;
+  margin: 0 10px;
+  @include medium {
+    margin: 0 20px;
+  }
+  @include large {
+    margin: 0 80px;
+  }
+  @include xlarge {
+    margin: 0 150px;
+  }
+  @include xxlarge {
+    margin: 0 210px;
+  }
+}
+
+.world-content {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 500px;
+
+
+  h2 {
+    font-size: 26px;
+    font-family: "Roboto";
+    color: rgb(15, 95, 92);
+    @include small{
+      font-size: 28px;
+    }
+    @include medium{
+      font-size: 32px;
+    }
+  }
+  p {
+    font-size: 12px;
+    font-family: "Roboto";
+    color: rgb(111, 147, 145);
+    line-height: 1.714;
+    @include small{
+      font-size: 14px;
+      color: rgb(131, 167, 165);
+    }
+  }
+}
+
+.world-image {
+  float: right;
+  margin-right: -10px;
+  @include medium {
+    margin-right: -20px;
+  }
+  @include large {
+    margin-right: -80px;
+  }
+  @include xlarge {
+    margin-right: -150px;
+  }
+  @include xxlarge {
+    margin-right: -210px;
+  }
+}
+
+.world-container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.world-container {
+  padding:  100px 0;
+  @include small{
+    padding: 50px 0;
+  }
+}

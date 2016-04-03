@@ -1,0 +1,95 @@
+#perfectTemplate {
+  background-color: #eef1ec;
+  @include large {
+    height: auto;
+  }
+}
+.perfectTemplate-container {
+  margin: 0 10px;
+  @include medium {
+    margin: 0 20px;
+  }
+  @include large {
+    margin: 0 80px;
+  }
+  @include xlarge {
+    margin: 0 150px;
+  }
+  @include xxlarge {
+    margin: 0 210px;
+  }
+}
+
+.perfectTemplate-content {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+  @include medium {
+    text-align: left;
+    padding-top: 50px;
+  }
+  @include large{
+    padding-top: 80px;
+  }
+  @include xxlarge {
+    padding-top: 110px;
+  }
+}
+
+.perfectTemplate-content h2 {
+  font-size: 32px;
+  font-family: "Roboto";
+  color: rgb(15, 95, 92);
+  line-height: 0.625;
+}
+
+.perfectTemplate-content p {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(131, 167, 165);
+  line-height: 1.571;
+
+}
+
+.perfectTemplate-image {
+  padding-top: 20px;
+
+  @include small {
+    padding-top: 0px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-right: -30px;
+  }
+
+  @include medium {
+    margin-right: 20px;
+    float: left;
+  }
+  @include xxlarge {
+    margin-right: 100px;
+  }
+  img{
+    margin: 20px auto;
+    width:50%;
+    height: 50%;
+    @include small{
+      width: 40%;
+      height:40%;
+    }
+@include medium{
+  margin: 0;
+  width:80%;
+  height: 80%;
+}
+    @include medium{
+      width: 100%;
+      height:100%;
+    }
+  }
+}
+
+.perfectTemplate-container:after {
+  content: '';
+  display: block;
+  clear: both;
+}

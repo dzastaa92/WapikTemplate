@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  padding: 0;
+  line-height: 85px;
+  margin: 0 20px;
+  @include xlarge {
+    margin: 0 210px;
+  }
+}
+
+.nav-submenu {
+  float: left;
+  a {
+    color: white;
+    font-size: 1.5em;
+    padding-right: 5px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    @include medium {
+      padding-right: 10px;
+    }
+    @include large {
+      padding-right: 20px;
+    }
+  }
+  span {
+    border-left: grey 1px solid;
+    padding-left: 5px;
+    color: white;
+    @include medium {
+      padding-left: 10px;
+    }
+    @include large {
+      padding-left: 20px;
+    }
+  }
+}
+
+.nav-menu {
+  float: right;
+}
+
+.nav-menu-list {
+  list-style: none;
+  text-transform: uppercase;
+  li {
+    display: inline-block;
+    margin-right: 5px;
+    @include medium {
+      margin-right: 10px;
+    }
+    @include large {
+      margin-right: 20px;
+    }
+    a {
+      color: #bec8c8;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+    }
+  }
+  li:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav-menu__btn {
+  line-height: 30px;
+  background-color: #697e7f;
+  color: white;
+  border: 0;
+  border-radius: 2px;
+  padding: 0 10px;
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  background: url("../Content/Header.png") no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 660px;
+  position: relative;
+  z-index: -1;
+}
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: white;
+
+  margin: 0 10px;
+  @include medium {
+    margin: 0 20px;
+  }
+  @include large {
+    margin: 0 80px;
+  }
+  @include xlarge {
+    margin: 0 150px;
+  }
+  @include xxlarge {
+    margin: 0 210px;
+  }
+  .header-content__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+  }
+  .header-content__subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    text-align: left;
+
+    @include medium {
+      width: 500px;
+      height: 40px;
+    }
+  }
+
+  .header-content__btn {
+    margin-top: 20px;
+    font-family: "Montserrat";
+    background-color: #6fb048;
+    border: 0px;
+    width: 185px;
+    height: 50px;
+    border-radius: 2px;
+  }
+  .header-content__btn:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+#aboutus {
+  margin: 0 10px;
+  @include medium {
+    margin: 0 20px;
+  }
+  @include large {
+    margin: 0 80px;
+  }
+  @include xlarge {
+    margin: 0 150px;
+  }
+  @include xxlarge {
+    margin: 0 210px;
+  }
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-header-title {
+  padding-top: 80px;
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(15, 95, 92);
+  text-align: center;
+}
+
+.section-header-underline {
+  width: 65px;
+  border: #6fb048 1px solid;
+}
+
+.section-header-subtitle, .aboutus-features__element p, .aboutus-others__element p {
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(131, 167, 165);
+}
+
+.aboutus-features {
+  margin-top: 50px;
+  @include small {
+    display: flex;
+  }
+  @include medium {
+    margin-top: 70px;
+  }
+}
+
+.aboutus-features__element {
+  text-align: center;
+  margin-top: 20px;
+  @include small{
+    margin-top: 0x;
+  }
+  @include large {
+    width: 33.3%;
+    padding: 0 20px;
+  }
+  h2 {
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: 700;
+    color: rgb(15, 95, 92);
+    line-height: 1.25;
+    text-align: center;
+  }
+}
+
+.aboutus-others {
+  margin-bottom: 50px;
+  text-align: center;
+  @include medium {
+    text-align: left;
+    margin-top: 100px;
+    margin-bottom: 130px;
+  }
+}
+
+.aboutus-others__element {
+  padding-top: 50px;
+
+}
+
+.aboutus-others__element span {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgb(15, 95, 92);
+  line-height: 1.25;
+  text-align: left;
+
+}
