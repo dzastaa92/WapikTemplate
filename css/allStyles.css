@@ -692,3 +692,95 @@ header {
     @media screen and (min-width: 1400px) {
       .download-container button {
         right: 210px; } }
+
+#contact {
+  margin: 0 10px; }
+  @media screen and (min-width: 768px) {
+    #contact {
+      margin: 0 20px; } }
+  @media screen and (min-width: 992px) {
+    #contact {
+      margin: 0 80px; } }
+  @media screen and (min-width: 1200px) {
+    #contact {
+      margin: 0 150px; } }
+  @media screen and (min-width: 1400px) {
+    #contact {
+      margin: 0 210px; } }
+
+.contact-container {
+  padding: 10px 0; }
+  @media screen and (min-width: 768px) {
+    .contact-container {
+      padding: 100px 0; } }
+
+@media screen and (min-width: 768px) {
+  .contact-data {
+    padding-right: 50px; } }
+
+.contact-data h1 {
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  color: #0f5f5c;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left; }
+
+.contact-data span, .contact-data p {
+  font-size: 13px;
+  font-family: "Roboto";
+  color: #83a7a5; }
+  .contact-data span b, .contact-data p b {
+    color: #0f5f5c; }
+
+.contact-list h2, .contact-newsletter h2 {
+  font-size: 15px;
+  font-family: "Roboto";
+  color: #0f5f5c;
+  font-weight: 700; }
+
+.contact-list ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 13px;
+  font-family: "Roboto";
+  line-height: 2.154; }
+
+.contact-list a {
+  color: #83a7a5; }
+
+.contact-newsletter p {
+  font-size: 13px;
+  font-family: "Roboto";
+  color: #83a7a5; }
+
+.contact-newsletter input {
+  background-color: #eef1ec;
+  border: 0px;
+  padding: 10px 15px; }
+
+footer {
+  margin: 0 10px;
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    footer {
+      margin: 0 20px; } }
+  @media screen and (min-width: 992px) {
+    footer {
+      margin: 0 80px; } }
+  @media screen and (min-width: 1200px) {
+    footer {
+      margin: 0 150px; } }
+  @media screen and (min-width: 1400px) {
+    footer {
+      margin: 0 210px; } }
+  footer p {
+    font-size: 12px;
+    font-family: "Roboto";
+    color: #83a7a5;
+    line-height: 1.5;
+    font-weight: 700; }
+  footer img {
+    position: absolute;
+    right: 0%;
+    top: 40%; }

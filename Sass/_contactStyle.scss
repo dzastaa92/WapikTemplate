@@ -1,0 +1,81 @@
+#contact {
+  margin: 0 10px;
+  @include medium {
+    margin: 0 20px;
+  }
+  @include large {
+    margin: 0 80px;
+  }
+  @include xlarge {
+    margin: 0 150px;
+  }
+  @include xxlarge {
+    margin: 0 210px;
+  }
+}
+
+.contact-container {
+  padding: 10px 0;
+  @include medium {
+    padding: 100px 0;
+  }
+
+}
+
+.contact-data {
+  @include medium {
+    padding-right: 50px;
+  }
+  h1 {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(15, 95, 92);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  span, p {
+    font-size: 13px;
+    font-family: "Roboto";
+    color: rgb(131, 167, 165);
+    b {
+      color: rgb(15, 95, 92);
+    }
+  }
+}
+
+.contact-list h2, .contact-newsletter h2 {
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(15, 95, 92);
+  font-weight: 700;
+}
+
+.contact-list {
+  ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 13px;
+    font-family: "Roboto";
+    line-height: 2.154;
+  }
+  a {
+    color: rgb(131, 167, 165);
+  }
+}
+
+.contact-newsletter {
+  p {
+    font-size: 13px;
+    font-family: "Roboto";
+    color: rgb(131, 167, 165);
+  }
+  input{
+    background-color: #eef1ec;
+    border: 0px;
+    padding: 10px 15px;
+  }
+  img{
+
+  }
+}

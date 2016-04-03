@@ -1,0 +1,28 @@
+footer{
+  margin: 0 10px;
+  @include medium {
+    margin: 0 20px;
+  }
+  @include large {
+    margin: 0 80px;
+  }
+  @include xlarge {
+    margin: 0 150px;
+  }
+  @include xxlarge {
+    margin: 0 210px;
+  }
+  position: relative;
+  p{
+      font-size: 12px;
+      font-family: "Roboto";
+      color: rgb(131, 167, 165);
+      line-height: 1.5;
+    font-weight: 700;
+  }
+  img{
+    position: absolute;
+    right: 0%;
+    top: 40%;
+  }
+}
