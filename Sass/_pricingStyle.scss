@@ -13,6 +13,181 @@
     margin: 0 210px;
   }
 }
-.pricing-tabs{
+
+.pricing-tabs {
+  margin: 40px 0;
   display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-tabs__element {
+  padding: 5px;
+  border: 1px #c1d3d2 solid;
+  margin-left: -1px;
+  @include small {
+    padding: 10px 20px 10px 20px;
+  }
+  @include medium {
+    padding: 10px 60px 30px 60px;
+  }
+  h3 {
+    font-size: 12px;
+    font-family: "Roboto";
+    color: rgb(111, 176, 72);
+    text-transform: uppercase;
+    line-height: 1.333;
+    font-weight: 700;
+    padding-bottom: 15px;
+    @include small {
+      font-size: 15px;
+    }
+  }
+  h2 {
+    font-size: 4px;
+    font-family: "Montserrat";
+    color: rgb(15, 95, 92);
+    line-height: 1.661;
+    -moz-transform: matrix(5.39831234090307, 0, 0, 5.39831234090305, 0, 0);
+    -webkit-transform: matrix(5.39831234090307, 0, 0, 5.39831234090305, 0, 0);
+    -ms-transform: matrix(5.39831234090307, 0, 0, 5.39831234090305, 0, 0);
+    @include small {
+      font-size: 7px;
+    }
+    @include medium {
+      font-size: 8px;
+    }
+    @include large {
+      font-size: 10px;
+    }
+    @include xlarge {
+      font-size: 12px;
+    }
+  }
+  p {
+    font-size: 11px;
+    font-family: "Roboto";
+    color: rgb(131, 167, 165);
+    font-weight: 700;
+    @include small {
+      font-size: 12px;
+    }
+    @include medium {
+      font-size: 14px;
+    }
+  }
+}
+
+.pricing-tabs__element:first-child {
+  margin-left: 0px;
+}
+
+.pricing-tabs__element p:first-of-type {
+  font-size: 12px;
+  font-family: "Roboto";
+  color: rgb(15, 95, 92);
+  line-height: 1.429;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  @include small {
+    font-size: 14px;
+  }
+}
+
+.pricing-tabs__element p:last-of-type {
+  padding-bottom: 5px;
+
+}
+
+.pricing-tabs__btn {
+  background-color: #83a7a5;
+  color: white;
+  border: 0;
+  border-radius: 2px;
+  padding: 5px 10px;
+  font-size: 10px;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  text-align: center;
+  @include small {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  @include medium {
+    padding: 12px 25px;
+  }
+}
+
+.pricing-tabs__btn_actvie {
+  background-color: #6fb048;
+}
+
+.pricing-plans {
+  margin-top: 70px;
+}
+
+.pricing-plans-heading {
+  font-size: 22px;
+  font-family: "Roboto";
+  color: rgb(15, 95, 92);
+  line-height: 0.909;
+  text-align: center;
+
+}
+
+.pricing-plans-list {
+  font-size: 12px;
+  list-style: none;
+  padding-left: 10px;
+  @include small {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+  @include large {
+    padding-left: 0px;
+    font-size: 14px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+  p {
+
+    font-family: "Roboto";
+    color: rgb(131, 167, 165);
+    line-height: 2.571;
+  }
+}
+
+.pricing-help {
+  max-width: 550px;
+  text-align: center;
+  margin: 50px auto 100px auto;
+  h2 {
+    font-size: 26px;
+    font-family: "Roboto";
+    color: rgb(111, 176, 72);
+    line-height: 0.625;
+    @include medium{
+      font-size: 32px;
+    }
+  }
+}
+
+.pricing-help__content {
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(131, 167, 165);
+  line-height: 1.333;
+
+}
+
+.pricing-email {
+  font-size: 18px;
+  font-family: "Roboto";
+  color: rgb(15, 95, 92);
+  line-height: 1.111;
+  font-weight: 700;
+  margin-top: 40px;
 }
