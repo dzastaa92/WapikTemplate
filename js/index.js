@@ -35,9 +35,30 @@ $(function () {
     });
 });
 
-$(window).on("load", function () {
+$(document).ready(function () {
+
+    $(window).scroll(startCounter);
+    function startCounter() {
+        $('.count').each(function () {
+            var objectBottom = $(this).offset().top + $(this).outerHeight();
+            var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+            if (objectBottom < windowBottom) {
+                $(window).off("scroll", startCounter);
+                var $this = $(this);
+                $({Counter: 0}).animate({Counter: $this.text()}, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function () {
+                        $this.text(Math.ceil(this.Counter));
+                    }
+                });
+            }
+        });
+    }
+
+
     $(window).scroll(function () {
-        $("#aboutus .section-header, #pricing .section-header, .aboutus-features__element, .aboutus-others__element, .pricing-tabs__element, .pricing-plans, .pricing-help").each(function () {
+        $("#aboutus .section-header, .aboutus-features__element, .aboutus-others__element").each(function () {
             /* Check the location of each desired element */
             var objectBottom = $(this).offset().top + $(this).outerHeight();
             var windowBottom = $(window).scrollTop() + $(window).innerHeight();
@@ -45,9 +66,10 @@ $(window).on("load", function () {
             /* If the element is completely within bounds of the window, fade it in */
             if (objectBottom < windowBottom) { //object comes into view (scrolling down)
 
-               if ($(this).css("opacity") == 0) {
+                if ($(this).css("opacity") == 0) {
                     $(this).fadeTo(500, 1);
                 }
+
 
             } else { //object goes out of view (scrolling up)
                 if ($(this).css("opacity") == 1) {
@@ -55,13 +77,13 @@ $(window).on("load", function () {
                 }
 
             }
+
         });
+
+
     });
     $(window).scroll(); //invoke scroll-handler on page-load
-// });
-//
-//
-// $(document).ready(function() {
+
     //window and animation items
     var animation_elements = $('.quotation-container, .world-container, .contact-container');
     var web_window = $(window);
@@ -75,7 +97,7 @@ $(window).on("load", function () {
 
 
         //iterate through elements to see if its in view
-        $.each(animation_elements, function() {
+        $.each(animation_elements, function () {
 
             //get the elements information
             var element = $(this);
@@ -94,10 +116,12 @@ $(window).on("load", function () {
     }
 
     //on or scroll, detect elements in view
-    $(window).on('scroll resize', function() {
+    $(window).on('scroll resize', function () {
         check_if_in_view()
     })
     //trigger our scroll event on initial load
     $(window).trigger('scroll');
 
+
 });
+
