@@ -13,6 +13,9 @@ nav {
     nav {
       margin: 0 210px; } }
 
+.navBackground {
+  background-color: #3c7778; }
+
 .nav-submenu {
   float: left; }
   .nav-submenu a {
