@@ -16,23 +16,26 @@
 
 .contact-container {
   padding: 10px 0;
-  @include medium {
+  text-align: center;
+  @include xlarge {
+    text-align: left;
     padding: 100px 0;
   }
 
 }
 
 .contact-data {
-  @include medium {
+  @include xlarge {
     padding-right: 50px;
   }
   h1 {
+
     font-size: 24px;
     font-family: 'Montserrat', sans-serif;
     color: rgb(15, 95, 92);
     font-weight: bold;
     text-transform: uppercase;
-    text-align: left;
+
   }
   span, p {
     font-size: 13px;
@@ -65,17 +68,47 @@
 }
 
 .contact-newsletter {
+  max-width: 300px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+
+
+  @include large {
+    transform: translateX(0%);
+    position: static;
+
+    margin: 0;
+    padding: 0;
+  }
   p {
     font-size: 13px;
     font-family: "Roboto";
     color: rgb(131, 167, 165);
   }
-  input{
+
+}
+
+.contact-newsletter-input {
+  position: relative;
+  input {
     background-color: #eef1ec;
     border: 0px;
     padding: 10px 15px;
-  }
-  img{
+
+    width: 100%;
+
+    height: 36px;
 
   }
+  button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 0;
+  }
+
 }

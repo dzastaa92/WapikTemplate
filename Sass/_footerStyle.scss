@@ -1,4 +1,4 @@
-footer{
+footer {
   margin: 0 10px;
   @include medium {
     margin: 0 20px;
@@ -13,16 +13,69 @@ footer{
     margin: 0 210px;
   }
   position: relative;
-  p{
-      font-size: 12px;
-      font-family: "Roboto";
-      color: rgb(131, 167, 165);
-      line-height: 1.5;
+  min-height: 50px;
+  p {
+    font-size: 12px;
+    font-family: "Roboto";
+    color: rgb(131, 167, 165);
+    line-height: 1.5;
     font-weight: 700;
+    text-align: center;
+    @include small{
+      text-align: left;
+      position: absolute;
+      left: 0;
+      top: 60%;
+      transform: translateY(-50%);
+    }
   }
-  img{
-    position: absolute;
-    right: 0%;
-    top: 40%;
+  .footer-list {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    @include small{
+      position: absolute;
+      right: 0;
+      top: 60%;
+      transform: translateY(-50%);
+
+    }
+    li {
+      display: inline-block;
+      @include small{
+      margin-left: 10px;
+    }
+    }
   }
-}
+  }
+
+  .footer-twitter {
+    height: 30px;
+    width: 30px;
+    background: url("../Content/sociallinks.png") 0 0;
+  }
+
+  .footer-facebook {
+    background: url("../Content/sociallinks.png") -40px 0;
+    height: 30px;
+    width: 30px;
+  }
+
+  .footer-instagram {
+    background: url("../Content/sociallinks.png") -80px 0;
+    height: 30px;
+    width: 30px;
+  }
+
+  .footer-dribble {
+    background: url("../Content/sociallinks.png") -120px 0;
+    height: 30px;
+    width: 30px;
+  }
+
+  .footer-github {
+    background: url("../Content/sociallinks.png") -160px 0;
+    height: 30px;
+    width: 30px;
+  }
