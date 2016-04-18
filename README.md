@@ -1,3 +1,3 @@
 # WapikTemplate
 
-http://wapik.azurewebsites.net/ 
+http://wapiktemplate.azurewebsites.net/ 
